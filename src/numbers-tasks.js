@@ -657,6 +657,9 @@ function getCountOfOddNumbers(number) {
   //   }
   // }
   // return sum;
+  if (number < 0) {
+    return Math.floor((-number + 1) / 2);
+  }
   return Math.floor((number + 1) / 2);
 }
 
